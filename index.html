@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth Innovators Hero Recreation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'wealth innovators-lime': '#cbf29a',
+                        'wealth innovators-cream': '#f8f8f4',
+                        'wealth innovators-green': '#15321e',
+                        'wealth innovators-dark': '#0f2615',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom underline style for the link */
+        .link-underline {
+            text-decoration: none;
+            border-bottom: 1px solid currentColor;
+            padding-bottom: 2px;
+        }
+        body {
+            background-color: #f8f8f4;
+            color: #15321e;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col relative pb-4">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-wealth innovators-lime w-full py-2.5 text-center text-[11px] md:text-xs font-medium tracking-wide text-wealth innovators-green cursor-pointer hover:underline">
+        Master consistent crypto profits with 30 years of market expertise. &rarr;
+    </div>
+
+    <!-- Navigation -->
+    <nav class="w-full px-6 py-5 md:px-12 flex justify-between items-center bg-wealth innovators-cream sticky top-0 z-50">
+        <div class="flex items-center gap-10">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold tracking-tight flex items-baseline gap-1 text-wealth innovators-green">
+                Wealth Innovators<span class="w-2.5 h-2.5 bg-wealth innovators-green rounded-full"></span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-8 text-sm font-medium text-wealth innovators-green/90">
+                <a href="#" class="hover:opacity-70 transition-opacity">Coaching</a>
+                <a href="#" class="hover:opacity-70 transition-opacity">Tools</a>
+                <a href="#" class="hover:opacity-70 transition-opacity">Education</a>
+            </div>
+        </div>
+
+        <!-- Right Menu -->
+        <div class="flex items-center gap-6 md:gap-8">
+            <a href="#" class="text-sm font-medium text-wealth innovators-green/90 hover:opacity-70 transition-opacity hidden sm:block">Login</a>
+            <a href="#" class="bg-wealth innovators-green text-white text-xs md:text-sm font-medium px-5 py-2.5 rounded-full hover:bg-opacity-90 transition-all">
+                Get Started
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow flex items-center justify-center px-6 md:px-12 py-8 md:py-16 max-w-[1600px] mx-auto w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center w-full">
+            
+            <!-- Left Content -->
+            <div class="flex flex-col items-start max-w-xl">
+                
+                <!-- Badge/Label -->
+                <div class="flex items-center gap-3 mb-6 md:mb-8">
+                    <span class="border border-wealth innovators-green/40 rounded-full px-2 py-0.5 text-[10px] font-medium tracking-wider uppercase">
+                        MOMENTUM AI
+                    </span>
+                    <span class="text-lg md:text-xl text-wealth innovators-green font-normal">Trading Intelligence</span>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="text-5xl md:text-[4rem] lg:text-[4.5rem] leading-[1.05] font-medium text-wealth innovators-green mb-6 md:mb-8 tracking-tight">
+                    Master the crypto markets with AI-driven clarity.
+                </h1>
+
+                <!-- Subtext -->
+                <p class="text-base md:text-lg leading-relaxed text-wealth innovators-green/80 mb-8 md:mb-10 max-w-md">
+                    Transform from a beginner to an independent trader. We combine automated momentum scanning with 30 years of veteran coaching to help you achieve consistent profits.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8">
+                    <a href="#" class="bg-wealth innovators-green text-white text-sm md:text-base font-medium px-8 py-4 rounded-full hover:bg-opacity-90 transition-all inline-flex items-center">
+                        Join the Community
+                    </a>
+                    
+                    <a href="#" class="group flex items-center gap-1 text-wealth innovators-green font-medium text-sm md:text-base">
+                        <span class="link-underline group-hover:border-wealth innovators-green/50 transition-colors">Explore AI Scanners</span>
+                        <span class="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Content (Image) -->
+            <div class="relative w-full flex justify-center lg:justify-end">
+                <!-- Using placeholder image to represent the capsule visual -->
+                <img src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/e90d4c22-20ad-4b12-b67f-8e48de0b584e/hero-1-img-0-1770058743994.png" 
+                     alt="DS-01 Daily Synbiotic Capsule" 
+                     class="w-full max-w-md lg:max-w-full h-auto object-contain mix-blend-multiply">
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Dark Strip (Peeking footer) -->
+    <div class="absolute bottom-0 left-0 w-full h-3 md:h-4 bg-wealth innovators-dark rounded-t-[2rem]"></div>
+
+</body>
+</html>
